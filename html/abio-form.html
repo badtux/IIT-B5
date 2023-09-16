@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two-Column Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin: 50px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        
+        table {
+            width: 50%;
+            /* padding: 25px; */
+        }
+
+        /*
+        td {
+            padding: 5px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #f49cce;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            width: 100px;
+            height: 50px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #d200ba;
+        } */
+        </style>
+</head>
+<body>
+    <h1>Two-Column Form</h1>
+
+    <form action="submit.php" method="post">
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="surname">Surname:</label></td>
+                <td><input type="text" id="surname" name="surname" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" min="18" max="80" required></td>
+            </tr>
+            <tr>
+                <td><label for="description">Description:</label></td>
+                <td><textarea id="description" name="description" rows="4" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="hobbies">Hobby:</label></td>
+                <td>
+                    <input type="checkbox" id="hobby1" name="hobbies[]" value="Reading">
+                    <label for="hobby1">Reading</label><br>
+                    <input type="checkbox" id="hobby2" name="hobbies[]" value="Gardening">
+                    <label for="hobby2">Gardening</label><br>
+                    <input type="checkbox" id="hobby3" name="hobbies[]" value="Cooking">
+                    <label for="hobby3">Cooking</label><br>
+                    <input type="checkbox" id="hobby4" name="hobbies[]" value="Painting">
+                    <label for="hobby4">Painting</label><br>
+                    <input type="checkbox" id="hobby5" name="hobbies[]" value="Sports">
+                    <label for="hobby5">Sports</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" id="gender_male" name="gender" value="Male">
+                    <label for="gender_male">Male</label><br>
+                    <input type="radio" id="gender_female" name="gender" value="Female">
+                    <label for="gender_female">Female</label><br>
+                    <input type="radio" id="gender_non_binary" name="gender" value="Non-Binary">
+                    <label for="gender_non_binary">Non-Binary</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="skill_level">Skill Level:</label></td>
+                <td><input type="range" id="skill_level" name="skill_level" min="1" max="10"></td>
+            </tr>
+            <!-- <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr> -->
+        </table>
+
+        <!-- Submit and Reset Buttons -->
+        <div style="text-align: center;">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
