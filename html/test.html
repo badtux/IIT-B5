@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Column Form</title>
+    <style>
+                body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            padding-right: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="age"],
+        input[type="radio"],
+        input[type="date"],
+        input[type="checkbox"],
+        select,
+        textarea,
+        input[type="range"],
+        input[type="week"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Two-Column Form</h1>
+    <form action="action.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="sname">Surname:</label>
+        <input type="text" id="sname" name="sname" >
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" required min="1" max="120" >
+        
+        <label for="Description">Description</label>
+        <textarea name="Description" id="Description" cols="20" rows="10"></textarea>
+
+        <label>Hobby:</label>
+
+        <input type="checkbox" id="reading" name="reading" >
+        <label for="reading">Reading</label>
+
+        <input type="checkbox" id="reading" name="reading" >
+        <label for="reading">Gardening</label>
+
+        <input type="checkbox" id="reading" name="reading" >
+        <label for="reading">Cooking</label>
+
+        <input type="checkbox" id="reading" name="reading" >
+        <label for="reading">Painting</label>
+
+        <input type="checkbox" id="reading" name="reading" >
+        <label for="reading">Sports</label>
+
+        <label> Gender:</label>
+
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender">
+        <label for="other">Other</label>
+
+        <label for="slider">Skill:</label>
+        <input type="range" id="volume" value="75" name="volume" min="0" max="100">
+    </form>
+</body>
+</html>
