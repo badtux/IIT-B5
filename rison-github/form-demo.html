@@ -1,165 +1,159 @@
-<DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>
             Two-Column Form
         </title>
-        <style>
-            body {
-                font-family: Century Gothic, sans-serif;
-                background-color: pink;
-            }
-    
-            h1 {
-                text-align: center;
-            }
-    
-            form {
-                width: 50%;
-                margin: 0 auto;
-                padding: 20px;
-                padding-right: 30px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                background-color: white;
-            }
-    
-            label {
-                display: block;
-                font-weight: bold;
-                margin-bottom: 5px;
-            }
-    
-            input[type="text"],
-            input[type="email"],
-            input[type="password"],
-            input[type="date"],
-            input[type="checkbox"],
-            select,
-            textarea,
-            input[type="range"],
-            input[type="week"],
-            input[type="file"] {
-                width: 100%;
-                padding: 10px;
-                margin-bottom: 10px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-            }
-    
-            select {
-                height: 35px;
-            }
-    
-            textarea {
-                resize: vertical;
-            }
-    
-            input[type="reset"],
-            input[type="submit"] {
-                background-color: purple;
-                color: #fff;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-    
-            input[type="reset"]:hover,
-            input[type="submit"]:hover {
-                background-color: pink;
-            }
-        </style>
-    </head>
+        <style></style>
+        <link rel="stylesheet" href="form-demo.css">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Form">
+        <meta name="keywords" content="Name">
+        <meta name="keywords" content="Textarea">
+        <meta name="keywords" content="Gender">
+        <meta name="keywords" content="Reset">
+        <meta name="keywords" content="Submit">
+        <meta name="description" content="Form-Form">
+        <meta name="description" content="Name-A text input field for entering your name">
+        <meta name="description" content="Textarea-Comments">
+        <meta name="description" content="Gender-Male, Female & Non-Binary">
+        <meta name="description" content="Reset-Erase inputs">
+        <meta name="description" content="Submit-Feed inputs">
+        <meta name="author" content="Two-Column Form">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script></script>
+    </head> 
     <body>
-        <h1>Two-Column Form</h1>
-    
-    <form action="submit.php" method="post">
-        <!-- Text Input -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" value="John Doe"  required>
-
-        <!-- Email Input -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <p>An email input field for entering your email address.</p>
-
-        <!-- Password Input -->
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" value="adfsfsfsf" required>
-        <p>A password input field for entering your password.</p>
-
-        <!-- Date Input -->
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" value="01/06/1993" name="dob">
-        <p>A date input field for selecting your date of birth.</p>
-
-        <!-- Checkbox -->
-        <label>Interests:</label>
-        <input type="checkbox" id="sports" name="interests[]" value="sports">
-        <label for="sports">Sports</label>
-        <input type="checkbox" id="music" checked name="interests[]" value="music">
-        <p>Checkbox inputs for selecting your interests.</p>
-
-        <!-- Radio Buttons -->
-        <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
-        <input type="radio" id="other" checked name="gender" value="other">
-        <label for="other">Other</label>
-        <p>Select your gender.</p>
-
-        <!-- Textarea -->
-        <label for="comments">Comments:</label>
-        <textarea id="comments" name="comments" rows="4" cols="50">DSDS  Sdsdjsd a ih dpsihdpisd</textarea>
-        <p>A textarea for entering your comments or feedback.</p>
-
-        <!-- Select Dropdown -->
-        <label for="country">Country:</label>
-        <select id="country" name="country">
-            <option value="usa">USA</option>
-            <option value="canada">Canada</option>
-            <option value="uk">UK</option>
-        </select>
-        <p>A select dropdown for selecting your country.</p>
-
-        <label for="appointment_time">Select Appointment Time:</label>
-        <input type="time" id="appointment_time" vale="11:38" name="appointment_time">
-
-        <!-- Option Groups -->
-        <label for="fruit">Select a Fruit:</label>
-        <select id="fruit" name="fruit">
-            <optgroup label="Citrus">
-                <option selected value="orange">Orange</option>
-                <option value="lemon">Lemon</option>
-            </optgroup>
-            <optgroup label="Berries">
-                <option value="strawberry">Strawberry</option>
-                <option value="blueberry">Blueberry</option>
-            </optgroup>
-        </select>
-        <p>A select dropdown with option groups for selecting a fruit.</p>
-
-        <!-- Range Input -->
-        <label for="volume">Volume:</label>
-        <input type="range" id="volume" value="75" name="volume" min="0" max="100">
-        <p>A range input for adjusting the volume.</p>
-
-        <!-- Week Input -->
-        <label for="week">Select a Week:</label>
-        <input type="week" id="week" value="25" name="week">
-        <p>A week input for selecting a week.</p>
-
-        <!-- File Input -->
-        <label for="file">Upload File:</label>
-        <input type="file" id="file" name="file">
-        <p>A file input for uploading a file.</p>
-
-        <!-- Reset and Submit Buttons -->
-        <input type="reset" value="Reset">
-        <input type="submit" value="Submit">
-    </form>
+        <div class="top">
+            <img src="Two-Column Form.jpg" alt="Two-Column Form" class="logo">
+            <h1 class="topic">
+                <u>
+                    Two-Column Form
+                </u>
+            </h1>
+        </div>
+        <!--Form-->
+        <div class="main">
+            <form action="Data.php" method="post" class="content">
+                <table class="definition">
+                    <!--A text input field for entering your name-->
+                    <tr>
+                        <td>
+                            <label for="name">
+                                Name:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="surname">
+                                Surname
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="surname" name="surname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="age">
+                                Age:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="number" id="age" name="age" min="18" max="80" required>
+                        </td>
+                    </tr>
+                    <!--Comments-->
+                    <tr>
+                        <td>
+                            <label for="description">
+                                Description
+                            </label>
+                        </td>
+                        <td>
+                            <textarea id="description" name="description" rows="24" cols="192"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="hobbies">
+                                Hobby:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="hobby1" name="hobbies[]" value="Reading">
+                            <label for="hobby1">
+                                Reading
+                            </label>
+                            <input type="checkbox" id="hobby2" name="hobbies[]" value="Gardening">
+                            <label for="hobby2">
+                                Gardening
+                            </label>
+                            <input type="checkbox" id="hobby3" name="hobbies[]" value="Cooking">
+                            <label for="hobby3">
+                                Cooking
+                            </label>
+                            <input type="checkbox" id="hobby4" name="hobbies[]" value="Painting">
+                            <label for="hobby4">
+                                Painting
+                            </label>
+                            <input type="checkbox" id="hobby5" name="hobbies[]" value="Sports">
+                            <label for="hobby5">
+                                Sports
+                            </label>
+                        </td>
+                    </tr>
+                    <!--Male, Female & Non-Binary-->
+                    <tr>
+                        <td>
+                            <label>
+                                Gender:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="radio" id="gender_male" name="gender" value="Male">
+                            <label for="gender_male">
+                                Male
+                            </label>
+                            <br>
+                            <input type="radio" id="gender_female" name="gender" value="Female">
+                            <label for="gender_female">
+                                Female
+                            </label>
+                            <br>
+                            <input type="radio" id="gender_non_binary" name="gender" value="Non-Binary">
+                            <label for="gender_non_binary">
+                                Non-Binary
+                            </label>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="skill_level">
+                                Skill Level:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="range" id="skill_level" name="skill_level" min="1" max="10">
+                        </td>
+                    </tr>
+                    <tr class="end">
+                        <td>
+                            <!--Erase inputs-->
+                            <input type="submit" value="Submit">
+                        </td>
+                        <td>
+                            <!--Feed inputs-->
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </body>
 </html>
