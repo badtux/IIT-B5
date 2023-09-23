@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin:0px;
+                padding: 0px;
+            }
+    
+            h1 {
+                padding-top: 100px;
+                text-align: center;
+            }
+    
+            form {
+                width: 50%;
+                margin: 0 auto;
+                padding: 20px;
+                padding-right: 30px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+    
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="date"],
+            select,
+            textarea,
+            input[type="range"],
+            input[type="week"],
+            input[type="file"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+    
+            select {
+                height: 35px;
+            }
+    
+            textarea {
+                resize: vertical;
+            }
+    
+            input[type="reset"],
+            input[type="submit"] {
+                background-color: #007BFF;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    
+            input[type="reset"]:hover,
+            input[type="submit"]:hover {
+                background-color: #0056b3;
+                align-self: center ;
+                align-items: center;
+            }
+            .labels{
+                margin: 0px;
+            }
+            
+            .mainlabel{
+                display: flex;
+                align-items: center;
+               
+            }
+            .checkbox-group {
+                display: flex;
+                align-items: center;
+                padding-left: 105px;
+                padding-bottom: 15px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Two Column Form</h1>
+        <form>
+        
+        <label>Name:</label>
+        <input type="text" id="name" name="name"  required>
+        <label>Surname:</label>
+        <input type="text" id="surname" name="surname"  required>
+        <label>Age:</label>
+        <input type="text" id="age" name="age"  required>
+        <label>Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+        
+            <label >Hobby:</label>
+            <div class="checkbox-group">
+                
+                <input type="checkbox" id="hobby1" name="hobby[]" value="hobby1">
+                <label for="hobby1" class="labels">Reading</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="hobby2" name="hobby[]" value="hobby2">
+                <label for="hobby2" class="labels">Cooking</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="hobby3" name="hobby[]" value="hobby3">
+                <label for="hobby3" class="labels">Gardening</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="hobby4" name="hobby[]" value="hobby4">
+                <label for="hobby4" class="labels">Sports</label>
+            </div>
+            
+       
+        <label>Gender:</label>
+        <div class="checkbox-group">
+            
+            <input type="radio" id="male" name="gender[]" value="male">
+            <label for="male" class="labels">Male</label>
+        </div>
+        
+        <div class="checkbox-group">
+            <input type="radio" id="female" name="gender[]" value="female">
+            <label for="female" class="labels">Female</label>
+        </div>
+        
+        <div class="checkbox-group">
+            <input type="radio" id="NonBinary" name="gender[]" value="NonBinary">
+            <label for="NonBinary" class="labels">Non Binary</label>
+        </div>
+        <label for="volume">Skill Level:</label>
+        <input type="range" id="skill" value="75" name="skill" min="0" max="100">
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        </div>
+       
+    </body>
+</html>
