@@ -1,0 +1,52 @@
+p
+    {
+        text-align: center;
+    }
+article
+    {
+        padding: 24px;
+    }
+main
+    {
+        background-color: #dcdcdc;
+        color: #808080;
+        margin: 0;
+        padding: 24px;
+    }
+h1
+    {
+        background-color: #808080;
+        color: #dcdcdc;
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+    }
+title
+    {
+        display: block;
+    }
+body
+    {
+        font-family: Century Gothic, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: block;
+        background-color: #adff2f;
+    }
+    body:focus
+        {
+            outline: none;
+        }
+section
+    {
+        padding: 24px;
+        margin: 0;
+        border: 1px solid #808080;
+    }
+aside
+    {
+        padding: 24px;
+        margin: 0;
+        border: 1px solid #adff2f;
+        text-align: center;
+    }
