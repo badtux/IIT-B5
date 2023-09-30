@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    
+</head>
+<body>
+    <h1>Two-Column Form</h1>
+
+    <form action ="#">
+        <!--Name input-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <!--Surname input-->
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required>
+        <br>
+
+        <!-- Age input-->
+        <label for="age">Age:</label>
+        <input type="numbers" id="age" name="age" required>
+        <br>
+
+        <!--Description Input-->
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea> 
+
+        <br>
+
+        <!--description checkbox-->
+        <label>Hobby:</label>
+        <input type="checkbox" id="hobby" name="hobby[]" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="hobby" name="hobby[]" value="gardening">
+        <label for="reading">Gardening</label>
+        <input type="checkbox" id="hobby" name="hobby[]" value="cooking">
+        <label for="reading">Cooking</label>
+        <input type="checkbox" id="hobby" name="hobby[]" value="painting">
+        <label for="reading">Paniting</label>
+        <input type="checkbox" id="hobby" name="hobby[]" value="sports">
+        <label for="reading">Sports</label>
+        <br>
+
+        <!--Gender buttons-->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" checked name="gender" value="other">
+        <label for="other">Other</label>
+        
+        <br>
+
+        <!--Skill range-->
+        <label for="skill level">Skill level:</label>
+        <input type="range" id="skill_level" value="75" name="skill_level" min="0" max="100">
+
+        <br>
+
+        <!-- reset and submit buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    
+    </form>
+</body>
+</html>

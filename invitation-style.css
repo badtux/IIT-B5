@@ -1,0 +1,47 @@
+
+
+
+.bgalice{
+    /*background-color: rgb(232, 213, 178);*/
+}
+body{
+    background-image:url(bar.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 170%;
+}
+/*.bg_img{
+    position: absolute;
+    z-index: -1;
+    height: 1100px;
+    width: auto;
+}*/
+.margin{
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+
+
+.greentext{
+    color: green;
+}
+
+main{
+    padding: 20px 20px 15px 20px;
+}
+
+.align_center{
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
