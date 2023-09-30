@@ -1,0 +1,123 @@
+body {
+    background-color: #494645;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.Topic{
+    font-size: 70px;
+    text-align: center;
+    text-decoration-style: solid;
+    text-shadow: 2px 2px 5px rgba(255, 255, 0, 0.5);
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 20px;
+    color: #EE590E;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.Topic:hover {
+    color: #F74F1D;
+    transform: scale(1.05);
+}
+
+.Description{
+    text-align: center;
+    font-size: 18px;
+    color: #FFF;
+    transition: color 0.3s ease;
+}
+
+.Description:hover {
+    color: #F74F1D;
+}
+
+.box {
+    padding: 30px;
+    border-radius: 30px;
+    border-style: double;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 20%;
+    margin-left: 20%;
+    outline: 2px solid #F74F1D;
+    box-shadow: 0 10px 20px rgba(255, 255, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.box:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.agenda {
+    text-align: center;
+}
+
+.agenda h2 {
+    color: #F74F1D;
+    font-size: 28px;
+}
+
+.agenda li {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #FFF;
+    transition: color 0.3s ease;
+}
+
+.agenda li:hover {
+    color: #F74F1D;
+}
+
+.agenda ul {
+    list-style-type: square;
+    margin-left: 40px;
+    color: #FFF;
+}
+
+.bring {
+    text-align: center;
+}
+
+.bring h2 {
+    color: #F74F1D;
+    font-size: 28px;
+}
+
+.bring li {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #FFF;
+    transition: color 0.3s ease;
+}
+
+.bring li:hover {
+    color: #F74F1D;
+}
+
+.address {
+    text-align: center;
+    font-size: 18px;
+    color: #FFF;
+    transition: color 0.3s ease;
+}
+
+.address:hover {
+    color: #F74F1D;
+}
+
+.contact {
+    text-align: center;
+    font-size: 18px;
+    color: #FFF;
+    transition: color 0.3s ease;
+}
+
+.contact:hover {
+    color: #F74F1D;
+}
