@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background: linear-gradient(to right,#e3dfdf, rgb(37, 37, 41)); */
+    background: rgb(29, 29, 37);
+}
+
+.container{
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    right: 50%;
+    border: 1px solid;
+}
+
+.hadeing{
+    border: 1px solid;
+    align-items: center;
+    text-align: center;
+}
+
+.big_hade{
+    color: orange;
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+}
+
+.sma_hade{
+    font-size: 30px;
+    margin-top: -10px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+}
+
