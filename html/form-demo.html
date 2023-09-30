@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Elements Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            padding-right: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="checkbox"],
+        select,
+        textarea,
+        input[type="range"],
+        input[type="week"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            height: 35px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="reset"],
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="reset"]:hover,
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Elements Demo</h1>
+    
+    <form action="submit.php" method="post">
+        <!-- Text Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="John Doe"  required>
+        <p>A text input field for entering your name.</p>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" disabled>
+        <p>An email input field for entering your email address.</p>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" value="adfsfsfsf" required>
+        <p>A password input field for entering your password.</p>
+
+        <!-- Date Input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" value="01/06/1993" name="dob">
+        <p>A date input field for selecting your date of birth.</p>
+
+        <!-- Checkbox -->
+        <label>Interests:</label>
+        <input type="checkbox" id="sports" name="interests[]" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" checked name="interests[]" value="music">
+        <p>Checkbox inputs for selecting your interests.</p>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" checked name="gender" value="other">
+        <label for="other">Other</label>
+        <p>Select your gender.</p>
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50">DSDS  Sdsdjsd a ih dpsihdpisd</textarea>
+        <p>A textarea for entering your comments or feedback.</p>
+
+        <!-- Select Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select>
+        <p>A select dropdown for selecting your country.</p>
+
+        <label for="appointment_time">Select Appointment Time:</label>
+        <input type="time" id="appointment_time" vale="11:38" name="appointment_time">
+
+        <!-- Option Groups -->
+        <label for="fruit">Select a Fruit:</label>
+        <select id="fruit" name="fruit">
+            <optgroup label="Citrus">
+                <option selected value="orange">Orange</option>
+                <option value="lemon">Lemon</option>
+            </optgroup>
+            <optgroup label="Berries">
+                <option value="strawberry">Strawberry</option>
+                <option value="blueberry">Blueberry</option>
+            </optgroup>
+        </select>
+        <p>A select dropdown with option groups for selecting a fruit.</p>
+
+        <!-- Range Input -->
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" value="75" name="volume" min="0" max="100">
+        <p>A range input for adjusting the volume.</p>
+
+        <!-- Week Input -->
+        <label for="week">Select a Week:</label>
+        <input type="week" id="week" value="25" name="week">
+        <p>A week input for selecting a week.</p>
+
+        <!-- File Input -->
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file">
+        <p>A file input for uploading a file.</p>
+
+        <!-- Reset and Submit Buttons -->
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
