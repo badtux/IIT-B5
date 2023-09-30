@@ -2,10 +2,14 @@ body {
     background-color: #494645;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-image: url(image2.jpg);
+    background-size: cover; 
+    background-attachment: fixed; 
+    padding: 50px;
 }
 
 .Topic{
-    font-size: 70px;
+    font-size: 100px;
     text-align: center;
     text-decoration-style: solid;
     text-shadow: 2px 2px 5px rgba(255, 255, 0, 0.5);
@@ -23,10 +27,13 @@ body {
 }
 
 .Description{
+    padding: 10px;
     text-align: center;
     font-size: 18px;
     color: #FFF;
     transition: color 0.3s ease;
+    font-size: 40px;
+    font-family: monospace;
 }
 
 .Description:hover {
@@ -34,7 +41,8 @@ body {
 }
 
 .box {
-    padding: 30px;
+    font-size: 70px;
+    padding: 10px;
     border-radius: 30px;
     border-style: double;
     margin-top: 50px;
@@ -45,11 +53,13 @@ body {
     box-shadow: 0 10px 20px rgba(255, 255, 0, 0.3);
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #EE590E;
 }
 
 .box:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(255, 255, 0, 0.5);
 }
 
 .agenda {
@@ -57,14 +67,15 @@ body {
 }
 
 .agenda h2 {
-    color: #F74F1D;
-    font-size: 28px;
+    color:#F8AC95;
+    font-size: 75px;
+    font-family:cursive
 }
 
 .agenda li {
     list-style-type: disc;
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 25px;
     color: #FFF;
     transition: color 0.3s ease;
 }
@@ -76,7 +87,7 @@ body {
 .agenda ul {
     list-style-type: square;
     margin-left: 40px;
-    color: #FFF;
+    color: yellow;
 }
 
 .bring {
@@ -84,14 +95,15 @@ body {
 }
 
 .bring h2 {
-    color: #F74F1D;
-    font-size: 28px;
+    color:#F8AC95;
+    font-size: 75px;
+    font-family:cursive
 }
 
 .bring li {
     list-style-type: disc;
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 25px;
     color: #FFF;
     transition: color 0.3s ease;
 }
