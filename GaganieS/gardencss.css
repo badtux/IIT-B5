@@ -41,12 +41,14 @@ p{
     background-size: cover; /* Adjust the size to cover the entire viewport */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     width: 600px; /* Set the width of your container */
-    height: 800px;
+    /*height: 800px;*/
 }
 
 main {
+    
     display: flex;
     justify-content: center; /* Horizontally center the content */
     align-items: center; /* Vertically center the content */
-    height: 100vh; /* Ensure the main element covers the full viewport height */
+     /* Ensure the main element covers the full viewport height */
+     margin-top: 80px;
 }
