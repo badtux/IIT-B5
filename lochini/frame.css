@@ -1,0 +1,39 @@
+*{
+    border: 3px black solid;
+}
+.box{
+   display: flex;
+   flex-direction: row; 
+   width: 800px;
+   height: 400px;
+}
+.main{
+    height: 400px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    
+}
+
+.red{
+    background-color: red;
+    height: 100%;
+    width: 200px;
+    opacity: 50%;
+}
+
+
+.green{
+    background-color: green;
+    height: 100%;
+    width: 200px;
+    opacity: 50%;
+}
+
+.blue{
+    background-color: blue;
+    height: 100%;
+    width: 200px;
+    opacity: 50%;
+    
+}
