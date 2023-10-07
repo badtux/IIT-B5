@@ -22,12 +22,26 @@ body{
 
 h1{
     font-family: 'Autour One', cursive;
-
+    font-size: 90px;
+    font-weight: 600;
+    color: #eca759;
+    text-shadow: 2px 2px 0px  #780606,
+                 4px 4px 0px #992626,
+                 6px 6px 0px #f20d2005,
+                 8px 8px 0px #e23b6b,
+                 10px 10px 0px #7c60ca;
 }
 
 h2{
     font-family: 'Autour One', cursive;
+    font-size: 30px;
+    color: rgb(178, 7, 7);
+    text-shadow: 2px 2px 0px  #eca759;
 
+}
+
+p{
+    font-size: 20px;
 }
 
 .greentext{
