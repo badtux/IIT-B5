@@ -1,13 +1,13 @@
 
 
 
-.bgalice{
-    /*background-color: rgb(232, 213, 178);*/
-}
+
 body{
     background-image:url(bar.jpg);
     background-repeat: no-repeat;
     background-size: auto 170%;
+    background-position: center 20px;    
+    
 }
 /*.bg_img{
     position: absolute;
@@ -20,14 +20,24 @@ body{
     margin-right: 500px;
 }
 
+h1{
+    font-family: 'Autour One', cursive;
 
+}
+
+h2{
+    font-family: 'Autour One', cursive;
+
+}
 
 .greentext{
     color: green;
 }
 
 main{
-    padding: 20px 20px 15px 20px;
+    padding: 100px 20px 15px 20px;
+    font-family: 'Autour One', cursive;
+
 }
 
 .align_center{
