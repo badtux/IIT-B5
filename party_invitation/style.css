@@ -1,0 +1,407 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    filter: grayscale(50%);
+    background-color: rgb(255, 242, 0);
+}
+
+.img_container{
+    width: 2976px;
+    height: 1416px;
+    overflow: hidden;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    /* filter: grayscale(50%); */
+}
+
+body:hover{
+    filter: grayscale(75%);
+}
+
+.r-2-10 {
+   width: 942.38px;
+    height: 970.55px;
+    position: absolute;
+    left: 2141.66px;
+   top: 211.28px;
+    transform-origin: 0 0;
+    transform: rotate(158.382deg) scale(1, 1);
+   }
+
+.r-5 {
+   width: 192px;
+    height: 106px;
+    position: absolute;
+    left: 548.49px;
+   top: 1411.99px;
+    transform-origin: 0 0;
+    transform: rotate(-6.833deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-1 {
+   width: 926.37px;
+    height: 565.59px;
+    position: absolute;
+    left: -195.4px;
+   top: 907px;
+    transform-origin: 0 0;
+    transform: rotate(13.247deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-2 {
+   width: 1084.6px;
+    height: 610.22px;
+    position: absolute;
+    left: 2665.53px;
+   top: -360px;
+    transform-origin: 0 0;
+    transform: rotate(40.652deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-2-1 {
+   width: 866.42px;
+    height: 892.32px;
+    position: absolute;
+    left: -297px;
+   top: 68.01px;
+    transform-origin: 0 0;
+    transform: rotate(-32.538deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-2-11 {
+   width: 355.23px;
+    height: 365.85px;
+    position: absolute;
+    left: 2276.5px;
+   top: 207.7px;
+    transform-origin: 0 0;
+    transform: rotate(-151.419deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-3-1 {
+   width: 1361.2px;
+    height: 756.89px;
+    position: absolute;
+    left: 1379px;
+   top: 1168.89px;
+    transform-origin: 0 0;
+    transform: rotate(-26.337deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-4 {
+   width: 798px;
+    height: 443px;
+    position: absolute;
+    left: 297.27px;
+   top: 464px;
+    transform-origin: 0 0;
+    transform: rotate(80.003deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-42 {
+   width: 1128.15px;
+    height: 626.28px;
+    position: absolute;
+    left: 1220.77px;
+   top: -480px;
+    transform-origin: 0 0;
+    transform: rotate(80.003deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-11 {
+   width: 192.07px;
+    height: 108.06px;
+    position: absolute;
+    left: 2152.09px;
+   top: 371.55px;
+    transform-origin: 0 0;
+    transform: rotate(-90.079deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-7 {
+      width: 204.73px;
+      height: 115.19px;
+      position: absolute;
+      left: 2223.96px;
+      top: 808.87px;
+      transform-origin: 0 0;
+      transform: rotate(90.157deg) scale(1, 1);
+      filter: blur(2px);
+   }
+
+.r-12 {
+   width: 117.96px;
+    height: 66.37px;
+    position: absolute;
+    left: 1979.17px;
+    top: 1199.63px;
+    transform-origin: 0 0;
+    transform: rotate(90.157deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-14 {
+   width: 117.96px;
+    height: 66.37px;
+    position: absolute;
+    left: 1744.15px;
+   top: 444.95px;
+    transform-origin: 0 0;
+    transform: rotate(90.157deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-13 {
+      width: 117.96px;
+      height: 66.37px;
+      position: absolute;
+      left:2344.52px;
+      top: 1207.74px;
+      transform-origin: 0 0;
+      transform: rotate(-90.079deg) scale(1, 1);
+      filter: blur(2px);
+   }
+
+.r-15 {
+   width: 117.96px;
+    height: 66.37px;
+    position: absolute;
+    left: 1207.91px;
+   top: 507.89px;
+    transform-origin: 0 0;
+    transform: rotate(-90.079deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-8 {
+   width: 103.61px;
+    height: 58.29px;
+    position: absolute;
+    left: 1392.74px;
+   top: 1341.86px;
+    transform-origin: 0 0;
+    transform: rotate(-32.326deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-2-3 {
+   width: 195.91px;
+    /* height: 201.76px; */
+    position: absolute;
+    left: 549.99px;
+   top: 807.09px;
+    transform-origin: 0 0;
+    transform: rotate(151.549deg) scale(1, 1);
+    filter: blur(2px);
+   }
+.r-2-6 {
+   width: 103.9px;
+    height: 107.01px;
+    position: absolute;
+    left: 1870.44px;
+   top: 935.79px;
+    transform-origin: 0 0;
+    transform: rotate(-137.146deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-2-8 {
+   width: 103.9px;
+    height: 107.01px;
+    position: absolute;
+    left: 1257.22px;
+   top: 1258.06px;
+    transform-origin: 0 0;
+    transform: rotate(151.549deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-2-4 {
+   width: 155.08px;
+    height: 159.72px;
+    position: absolute;
+    left: 1224.8px;
+    top: 1008.97px;
+    transform-origin: 0 0;
+    transform: rotate(-158.252deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-2-7 {
+   width: 133.9px;
+    height: 137.9px;
+    position: absolute;
+    left: 1209.84px;
+   top: 1430.43px;
+    transform-origin: 0 0;
+    transform: rotate(100.458deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-2-9 {
+   width: 77.15px;
+    height: 79.45px;
+    position: absolute;
+    left: 1467.26px;
+   top: 1290.02px;
+    transform-origin: 0 0;
+    transform: rotate(-158.252deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-52 {
+   width: 221.68px;
+    height: 122.94px;
+    position: absolute;
+    left: 517.91px;
+   top: 1156.85px;
+    transform-origin: 0 0;
+    transform: rotate(-85.072deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-53 {
+   width: 287.49px;
+    height: 159.44px;
+    position: absolute;
+    left: 1668.8px;
+   top: 794.48px;
+    transform-origin: 0 0;
+    transform: rotate(-156.377deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-54 {
+   width: 147.6px;
+    height: 81.86px;
+    position: absolute;
+    left: 1471.12px;
+   top: 1044.84px;
+    transform-origin: 0 0;
+    transform: rotate(-85.072deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-55 {
+   width: 122.68px;
+    height: 68.04px;
+    position: absolute;
+    left: 1394.28px;
+   top: 460.71px;
+    transform-origin: 0 0;
+    transform: rotate(-85.072deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-56 {
+   width: 215.9px;
+    height: 119.74px;
+    position: absolute;
+    left: 2575.3px;
+   top: 451.74px;
+    transform-origin: 0 0;
+    transform: rotate(-116.546deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-57 {
+   width: 208.14px;
+    height: 115.44px;
+    position: absolute;
+    left: 750.15px;
+   top: 1405.54px;
+    transform-origin: 0 0;
+    transform: rotate(-37.635deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-9 {
+   width: 147.05px;
+    /* height: 82.74px; */
+    position: absolute;
+    left: 855.6px;
+   top: 974.38px;
+    transform-origin: 0 0;
+    transform: rotate(-90.079deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-58 {
+   width: 156.5px;
+    height: 86.79px;
+    position: absolute;
+    left: 1891.01px;
+   top: 411.16px;
+    transform-origin: 0 0;
+    transform: rotate(40.735deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-59 {
+   width: 156.5px;
+    height: 86.79px;
+    position: absolute;
+    left: 1550.69px;
+    top: 1418.72px;
+    transform-origin: 0 0;
+    transform: rotate(-37.635deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-510 {
+   width: 331.04px;
+    height: 183.6px;
+    position: absolute;
+    left: 2264.03px;
+   top: 391.64px;
+    transform-origin: 0 0;
+    transform: rotate(16.853deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-2-5 {
+   width: 106.25px;
+    height: 109.42px;
+    position: absolute;
+    left: 859.36px;
+   top: 633.39px;
+    transform-origin: 0 0;
+    transform: rotate(-158.252deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-2-2 {
+   width: 216.23px;
+    height: 222.7px;
+    position: absolute;
+    left: 2837.97px;
+   top: 1122.54px;
+    transform-origin: 0 0;
+    transform: rotate(-6.663deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
+.r-10 {
+   width: 207.21px;
+    height: 116.58px;
+    position: absolute;
+    left: 3037.18px;
+   top: 740.32px;
+    transform-origin: 0 0;
+    transform: rotate(90.157deg) scale(1, 1);
+    filter: blur(2px);
+   }
+
