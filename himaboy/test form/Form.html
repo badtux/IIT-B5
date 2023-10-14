@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Elements Demo</title>
+    <link rel="stylesheet" href="style.css">
+  
+    </head>
+    <body>
+        <div class="container">
+            <h1>Two-Column Form</h1>
+            
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <td style="width:50%">
+                            <label for="name">Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="name" required>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="surname">Surname:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="surname" name="surname" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="age">Age:</label>
+                        </td>
+                        <td>
+                            <input type="number" id="age" name="age" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="description">Description:</label>
+                        </td>
+                        <td>
+                            <textarea id="description" name="description" rows="4" required></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Hobbies:</label>
+                        </td>
+                        <td>
+                            <label class="hobby-label"><input type="checkbox" name="hobby[]" value="Reading"> Reading</label>
+                            <label class="hobby-label"><input type="checkbox" name="hobby[]" value="Gardening"> Gardening</label>
+                            <label class="hobby-label"><input type="checkbox" name="hobby[]" value="Cooking"> Cooking</label>
+                            <label class="hobby-label"><input type="checkbox" name="hobby[]" value="Painting"> Painting</label>
+                            <label class="hobby-label"><input type="checkbox" name="hobby[]" value="Sports"> Sports</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Gender:</label>
+                        </td>
+                        <td>
+                            <label class="gender-label"><input type="radio" name="gender" value="Male"> Male</label>
+                            <label class="gender-label"><input type="radio" name="gender" value="Female"> Female</label>
+                            <label class="gender-label"><input type="radio" name="gender" value="Female"> Non-Binary</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="skill-level">Skill Level:</label>
+                        </td>
+                        <td>
+                            <input type="range" id="skill-level" value="75" name="skill-level" min="0" max="100">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+    </body>
+    </html>

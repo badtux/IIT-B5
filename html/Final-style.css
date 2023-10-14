@@ -1,0 +1,52 @@
+body {
+  background-image: url("nauris-pukis-lilvMkYv0V0-unsplash.jpg");
+  background-size: cover;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+strong {
+  font-weight: bold;
+}
+
+article {
+  margin-top: 20px;
+}
+
+ol,
+ul {
+  padding-left: 20px;
+}
+
+aside {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+footer p {
+  text-align: center;
+}
