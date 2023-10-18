@@ -1,30 +1,30 @@
 p
     {
         text-align: center;
-		padding: 0;
-		margin: 0;
+		padding: 8px;
+        margin: 8px;
 		box-sizing: border-box;
     }
 article
     {
-        padding: 0;
-		margin: 0;
+        padding: 8px;
+        margin: 8px;
 		box-sizing: border-box;
     }
 main
     {
         background-color: #dcdcdc;
         color: #808080;
-        padding: 0;
-		margin: 0;
+        padding: 8px;
+        margin: 8px;
 		box-sizing: border-box;
     }
 h1
     {
         background-color: #808080;
         color: #dcdcdc;
-        padding: 0;
-		margin: 0;
+        padding: 8px;
+        margin: 8px;
 		box-sizing: border-box;
     }
 title
@@ -34,8 +34,8 @@ title
 body
     {
         font-family: Century Gothic, sans-serif;
-        padding: 0;
-		margin: 0;
+        padding: 8px;
+        margin: 8px;
 		box-sizing: border-box;
         background-color: #adff2f;
 		filter: grayscale(50%);
@@ -51,15 +51,15 @@ body
 		}
 section
     {
-        padding: 0;
-		margin: 0;
+        padding: 8px;
+        margin: 8px;
 		box-sizing: border-box;
         border: 1px solid #808080;
     }
 aside
     {
-        padding: 0;
-		margin: 0;
+        padding: 8px;
+        margin: 8px;
 		box-sizing: border-box;
         border: 1px solid #adff2f;
         text-align: center;
