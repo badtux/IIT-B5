@@ -1,0 +1,37 @@
+
+
+.container1{
+
+    width:150px;
+    height:150px;
+    background-color: red;
+    
+}
+
+.container2{
+
+    width:150px;
+    height:150px;
+    
+    background-color: green ;
+   
+}
+
+.container3{
+
+    width:150px;
+    height:150px;
+    background-color: blue;
+    clear:left;
+    
+}
+.container4{
+
+    width:150px;
+    height:150px;
+    background-color: yellow;
+   
+    
+}
+
+
