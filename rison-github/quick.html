@@ -6,9 +6,27 @@
         </title>
     </head>
     <body>
-        <input type="text">
-        <button>
-            Done
-        </button>
+        <p style="color: red;">
+            Hey there this is js workings
+        </p>
+        <input type="text" id="fname" value="hello">
+        <input type="submit" value="correction" id="do_fix">
+        <script>
+            var myParas = document.getElementsByTagName('p');
+            myParas[0].style.color='blue';
+
+            var myBtn = document.getElementById('do_fix');
+            myBtn.addEventListener('click', function(){
+                console.log('someone clicked the button');
+                var color = document.getElementById('fname').value;
+                if(color == '') {
+                    alert('Please type a valid web color name');
+                }
+                else {
+                    myParas[0].style.color=color;
+
+                }
+            });
+        </script>
     </body>
 </html>
