@@ -1,0 +1,59 @@
+.ani{
+    position: relative;
+    top: -300px;
+    rotate: 9deg;
+    animation: ani 10s 15s infinite;
+}
+
+@keyframes ani{
+    0%{
+        top: -300px;
+        filter: blur(0px);
+        filter: grayscale(1%);
+    }
+    50%{
+        /* bottom: 0; */
+        top: 121px;
+        filter: blur(3px);
+        filter: grayscale(75%);
+    }
+    100%{
+        bottom: 0;
+        filter: blur(0px);
+        filter: grayscale(10%);
+    }
+}
+
+.topic .Your , .Invited:hover{
+    animation: textani 3s 3s infinite;
+}
+
+.Invited:hover{
+    transition: 1s;
+}
+.Invited:hover{
+    text-shadow: 10px -10px 1px rgb(50, 48, 48);
+}
+@keyframes textani{
+    0%{
+        text-shadow: 1px 1px 1px black;
+    }
+    50%{
+        text-shadow: 8px -8px 1px rgb(50, 48, 48);
+    }
+    100%{
+        text-shadow: 0 0 0;
+    }
+}
+
+body{
+    animation: bodycolor 10s;
+}
+@keyframes bodycolor{
+    from{
+        background: white;
+    }
+    to{
+        background: yellow;
+    }
+}
