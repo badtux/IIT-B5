@@ -8,6 +8,24 @@ const n2 = 20;
 
 const myapp = express();
 
+myapp.use(express.static('public'));
+
+myapp.post('/calc/add', (req,res) => {
+    res.json({
+        'msg' : 'This is post route'
+    });
+});
+
+myapp.get('/', (req,res) =>{
+
+});
+
+myapp.delete('/calc/add', (req,res) => {
+    res.json({
+        'msg' : 'This is del route'
+    });
+});
+
 myapp.get('/calc/add', (req, res) => {
     //console.log(req);
     res.json({
