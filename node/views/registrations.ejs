@@ -1,0 +1,28 @@
+<!-- users.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup List</title>
+</head>
+<body>
+
+    <h1>Registrations</h1>
+
+    <% if (registrations.length > 0) { %>
+        <ul>
+            <% registrations.forEach(entry => { %>
+                <li>
+                    <strong><%= entry.name %></strong> from <%= entry.country %>
+                    <a href="/delete/<%= entry.id %>">Delete</a>
+                </li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p>No registrations found.</p>
+    <% } %>
+
+</body>
+</html>

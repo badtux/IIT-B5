@@ -86,6 +86,19 @@ myapp.delete('/calc/add', (req,res) => {
     });
 });
 
+myapp.get('/list-registrations', (req, res) => {
+    mydb.all('SELECT id, name, country FROM users', [], (err, data) => {
+        if (err) {
+            throw err;
+        }
+        console.log(data);
+
+        res.render('registrations', {
+            registrations: data
+        });
+    });
+});
+
 myapp.get('/calc/add', (req, res) => {
     //console.log(req);
     res.json({
