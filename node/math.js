@@ -55,13 +55,24 @@ myapp.get('/register', (req,res) => {
 myapp.post('/signup', (req,res) => {
 //    console.log(req.body); 
    const { name, country } = req.body; 
-   mydb.run('INSERT INTO users (name, country) VALUES (?, ?)', [name,country], (err) => {
+   mydb.run('INSERT INTO users (name, country) VALUES (?, ?)', [name,country], (err, country) => {
         if (err) {
         // console.error('Error inserting data into the database:', err.message);
             res.send('Error submitting the form. '+err.message);
         } else {
             // console.log('Data inserted successfully');
-            res.send('Form submitted successfully!');
+            // res.send('Form submitted successfully!');
+            console.log(country);
+            var nextForm = 'europe.html'; 
+            if(country == 'China') { 
+                nextForm = 'asia.html'; 
+            }
+
+            res.json({
+                status: true,
+                message : 'Registration is confirmed!',
+                redirect : nextForm
+            });
         }
     });
 });
