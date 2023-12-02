@@ -39,7 +39,7 @@ myapp.post('/calc/add', (req,res) => {
 myapp.get('/', (req,res) =>{
     res.send('<html><body><h1>Hello '+req.query.name+'!</h1></body></html>');
 });
-
+ 
 myapp.get('/students/199', (req,res) => {
     res.render('student', { 
         fullName: 'Barak Obama',
@@ -53,16 +53,17 @@ myapp.get('/register', (req,res) => {
 });
 
 myapp.post('/signup', (req,res) => {
-//    console.log(req.body); 
-   const { name, country } = req.body; 
-   mydb.run('INSERT INTO users (name, country) VALUES (?, ?)', [name,country], (err, country) => {
+    //console.log(req.body); 
+   const { name, country } = req.body;
+   const regeion = country;
+   function insertData(err){
         if (err) {
-        // console.error('Error inserting data into the database:', err.message);
+            // console.error('Error inserting data into the database:', err.message);
             res.send('Error submitting the form. '+err.message);
         } else {
             // console.log('Data inserted successfully');
             // res.send('Form submitted successfully!');
-            console.log(country);
+            console.log(country + ' ' +regeion);
             var nextForm = 'europe.html'; 
             if(country == 'China') { 
                 nextForm = 'asia.html'; 
@@ -74,7 +75,9 @@ myapp.post('/signup', (req,res) => {
                 redirect : nextForm
             });
         }
-    });
+   }
+
+   mydb.run('INSERT INTO users (name, country) VALUES (?, ?)', [name,country], insertData);
 });
 
 myapp.delete('/calc/add', (req,res) => {
