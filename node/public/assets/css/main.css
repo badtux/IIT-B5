@@ -5,12 +5,11 @@ body {
 .form-done {
     display: none;
 }
-
 .msg-visible {
     display: block !important;
 }
 
-.msg-container {
+#msg-container {
     display: none;
     background-color: lightgray;
 }
