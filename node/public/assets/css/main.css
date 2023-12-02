@@ -1,3 +1,20 @@
 body {
-    background-color: red;
+    /* background-color: red; */
+}
+
+.form-done {
+    display: none;
+}
+
+.msg-visible {
+    display: block !important;
+}
+
+.msg-container {
+    display: none;
+    background-color: lightgray;
+}
+
+#msg-text {
+    color: greenyellow;
 }
