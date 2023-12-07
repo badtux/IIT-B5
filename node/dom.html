@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <style>
+            .red {
+                color:'red !important'
+            }
+
+            .yellow {
+                color: yellow
+            }
+
+            .bold{
+                font-weight: 800;
+            }
+
+            .lite {
+                font-weight: 400;
+            }
+        </style>
+    </head>
+    <body>
+        <p style="color:red;">
+            Chrome: CTRL + U. Or you can click on the weird-looking key with three horizontal lines in the upper right hand corner.
+        </p>
+        <p>
+            The color of text is <a id="link_to_color" style="text-decoration: none;" href="https://www.google.com/search?q=blue"><span id="text_here">blue</span></a>.
+        </p>
+        <input type="text" id="target_color" value="Hello">
+        <input type="submit" id="do_fix" value="Correction">
+        <script>
+            var myParas = document.getElementsByTagName('p');
+            myParas[0].style.color='blue';
+            
+            var myBtn = document.getElementById('do_fix');
+            myBtn.addEventListener('click', function(){
+                console.log('someone clicked the button');
+                var color = document.getElementById('target_color').value;
+                if(color == ''){
+                    alert('Please type a valid web color name');
+                }
+                else {
+                    var myText = document.getElementById('text_here');
+                    myText.innerText=color;
+                   // myText.style.color=color;
+                    //myText.classList.add(color);
+
+                    if(color == 'red'){
+                        myText.classList.add('bold');
+                        myText.classList.add('red');
+                    }
+                    document.getElementById('link_to_color').setAttribute('href', 'https://www.google.com/search?q=color '+color);
+
+                    myParas[0].style.color=color;    
+                }
+            });
+        </script>
+    </body>
+</html>

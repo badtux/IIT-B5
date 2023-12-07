@@ -1,0 +1,30 @@
+* {
+    border: 1px purple solid;
+}
+
+.bgAlice {
+    background-color: aliceblue;
+}
+
+.greenText {
+    color: green;
+}
+
+.redText {
+    color: red;
+}
+
+main {
+    padding: 20px 20px 15px 20px;   
+}
+
+h1  { 
+    /* color: red; */
+    /* background-color: aliceblue;  */
+}
+
+ p {
+    text-align: center;
+    /* color: red;   */
+    /* background-color: aquamarine; */
+} 
