@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+<body>
+
+  <label for="num1">Number 1:</label>
+  <input type="text" id="num1" placeholder="Enter number 1">
+
+  <label for="num2">Number 2:</label>
+  <input type="text" id="num2" placeholder="Enter number 2">
+
+  <button id="calculateButton">Calculate</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to input fields and the button
+      const num1Input = document.getElementById('num1');
+      const num2Input = document.getElementById('num2');
+      const calculateButton = document.getElementById('calculateButton');
+
+      // Add click event listener to the button
+      calculateButton.addEventListener('click', function () {
+        // Get values from input fields
+        const num1 = num1Input.value;
+        const num2 = num2Input.value;
+
+        // Validate input (you may want to add more robust validation)
+        if (!num1 || !num2) {
+          alert('Please enter values for both numbers.');
+          return;
+        }
+
+        // Build the URL with parameters
+        const url = `http://localhost:3030/calc/add?a=${encodeURIComponent(num1)}&b=${encodeURIComponent(num2)}`;
+
+        // Create and send a GET request
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+
+        xhr.onload = function () {
+          if (xhr.status >= 200 && xhr.status < 300) {
+            // Request was successful
+            const response = JSON.parse(xhr.responseText);
+
+            // Use the result to update the button label
+            calculateButton.textContent = `Result: ${response.out}`;
+          } else {
+            // Request failed
+            console.error('Request failed with status:', xhr.status);
+          }
+        };
+
+        xhr.onerror = function () {
+          // There was a network error
+          console.error('Network error occurred');
+        };
+
+        xhr.send();
+      });
+    });
+  </script>
+
+</body>
+</html>

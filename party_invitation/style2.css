@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 1200px;
+    margin-left: 50px;
+    margin-right: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1100px;
+}
+
+.topic{
+    display: inline-block;
+    position: relative;
+    margin-top: auto;
+}
+
+
+
+.Your , .Invited{
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.Your{
+    /* bottom: 10px; */
+    font-family: 'Poppins', sans-serif;
+    top: 90px;
+    font-size: 150px;
+    margin-bottom: 0;
+}
+.Invited{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 300px;
+    top: -20px;
+}
+.tas{
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 50px;
+    position: relative;
+    top: -160px;
+}
+
+.invitation{
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'IBM Plex Sans', sans-serif; */
+    background-color: white;
+    /* filter: opacity(70%); */
+    text-align: center;
+    position: relative;
+}
+.invitation:hover{
+    transition: 1s;
+    box-shadow: 5px 2px 30px rgba(0, 0, 0, 0.468);
+}
+
+.backyard,.BBQ,.date,.place,.address{
+    text-transform: uppercase;
+}
+
+.backyard{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 80px;
+    font-size: 70px;
+    margin-bottom: 0;
+    letter-spacing: 10px;
+}
+.BBQ{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 250px;
+    margin-top: -75px;
+    margin-bottom: 10px;
+    /* color: yellow; */
+}
+
+
+.Sunday,._31,._2028{
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    position: relative;
+    font-size: 70px;
+    padding: 0 10px;
+    vertical-align: middle;
+    margin-top: 100px;
+}
+._31{
+    vertical-align: middle;
+    font-size: 120px;
+}
+
+.place{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 60px;
+    margin-top: 150px;
+}
+.address{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-top: 15px;
+}
