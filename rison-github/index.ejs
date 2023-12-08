@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Calculator</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    #calculator-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    #calculator-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 18px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    #calculator {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    button {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      margin: 5px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    button.operator {
+      background-color: #FF8C00; /* Dark Orange */
+      color: #fff;
+    }
+
+    button.number {
+      background-color: #4CAF50; /* Green */
+      color: #fff;
+    }
+
+    button.clear {
+      background-color: #FF0000; /* Red */
+      color: #fff;
+    }
+
+    button.equal {
+      background-color: #008CBA; /* Blue */
+      color: #fff;
+    }
+
+    button:hover {
+      filter: brightness(90%);
+    }
+
+    #history-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-left: 20px;
+      overflow-y: auto;
+      max-height: 400px;
+    }
+
+    #history {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #history li {
+      margin: 5px 0;
+      font-size: 16px;
+      border-bottom: 1px solid #ddd;
+      padding: 5px 0;
+    }
+
+    #history li:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- <h1>Colorful Calculator</h1> -->
+
+  <div id="calculator-container">
+    <form id="calculator-form" action="/calculate" method="post">
+      <input type="text" name="expression" id="expression" placeholder="Enter expression" required readonly>
+      <div id="calculator">
+        <button type="button" class="number" onclick="appendToExpression('7')">7</button>
+        <button type="button" class="number" onclick="appendToExpression('8')">8</button>
+        <button type="button" class="number" onclick="appendToExpression('9')">9</button>
+        <button type="button" class="operator" onclick="appendToExpression('/')">/</button>
+
+        <button type="button" class="number" onclick="appendToExpression('4')">4</button>
+        <button type="button" class="number" onclick="appendToExpression('5')">5</button>
+        <button type="button" class="number" onclick="appendToExpression('6')">6</button>
+        <button type="button" class="operator" onclick="appendToExpression('*')">*</button>
+
+        <button type="button" class="number" onclick="appendToExpression('1')">1</button>
+        <button type="button" class="number" onclick="appendToExpression('2')">2</button>
+        <button type="button" class="number" onclick="appendToExpression('3')">3</button>
+        <button type="button" class="operator" onclick="appendToExpression('-')">-</button>
+
+        <button type="button" class="number" onclick="appendToExpression('0')">0</button>
+        <button type="button" class="number" onclick="appendToExpression('.')">.</button>
+        <button type="button" class="clear" onclick="clearExpression()">C</button>
+        <button type="button" class="operator equal" onclick="appendToExpression('+')">+</button>
+      </div>
+      <button type="submit" class="equal">Calculate</button>
+    </form>
+  </div>
+
+  <div id="history-container">
+    <h2>History</h2>
+    <ul id="history">
+      <% history.forEach(item => { %>
+        <li><%= item.expression %> = <%= item.result %></li>
+      <% }); %>
+    </ul>
+  </div>
+
+  <script>
+    function appendToExpression(value) {
+      const expressionInput = document.getElementById('expression');
+      expressionInput.value += value;
+    }
+
+    function clearExpression() {
+      const expressionInput = document.getElementById('expression');
+      expressionInput.value = '';
+    }
+  </script>
+</body>
+</html>
