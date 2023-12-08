@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Sign Up
+		</title>
+		<style>
+			body
+				{
+					font-family: Century Gothic, sans-serif;
+					background-color: #000000;
+					color: #ffffff;
+					font-size: 24px;
+					text-align: justify;
+				}
+			.header-sign-up
+				{
+					background-color: #ffffff;
+					color: #000000;
+					padding: 24px;
+					margin: 24px;
+					font-family: Times New Roman, sans-serif;
+					font-size: 33px;
+					position: -webkit-sticky;
+					position: sticky;
+				}
+			.form-content
+				{
+					background-color: #000000;
+					padding: 24px;
+					margin: 24px;
+					border: 3px solid gray;
+				}
+			input[type=username], input[type=password]
+				{
+					width: 80%;
+					padding: 24px;
+					margin: 24px;
+					display: inline-block;
+					background-color: #ffffff;
+					resize: both;
+				}
+			input[type=username]:focus, input[type=password]:focus
+				{
+					background-color: #808080;
+					outline: none;
+				}
+			.retrieve
+				{
+					overflow: hidden;
+					float: left;
+				}
+			button
+				{
+					overflow: hidden;
+					float: right;
+					font-family: Century Gothic, sans-serif;
+					display: inline-block;
+					font-size: 24px;
+					cursor: pointer;
+					text-decoration: none;
+					outline: none;
+					background-color: #000000;
+					box-shadow: 0 3px #808080;
+					border: 3px solid gray;
+					color: #808080;
+					padding: 3px;
+					margin: 3px;
+				}
+			button::after
+				{
+					clear: both;
+					display: table;
+				}
+			button:hover
+				{
+					background-color: #ffffff;
+				}
+			button:active
+				{
+					background-color: #000000;
+					box-shadow: 0 3px #808080;
+					transform: translateY(3px);
+				}
+			.retrieve a
+				{
+					color: #808080;
+					padding: 3px;
+					margin: 3px;
+					text-decoration: none;
+					display: block;
+				}
+			@media screen and (max-width: 360px)
+				{
+					.retrieve
+						{
+							width: 80%;
+						}
+				}
+		</style>
+		<script scr="need.js"></script>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Sign-Up">
+		<meta name="keywords" content="Sign-Up-Details">
+		<meta name="keywords" content="Username">
+		<meta name="keywords" content="Password">
+		<meta name="keywords" content="Cancel">
+		<meta name="keywords" content="Button-Sign-Up">
+		<meta name="description" content="Sign-Up-Header-Sign-Up-Form">
+		<meta name="description" content="Sign-Up-Sign-Up-Form">
+		<meta name="description" content="Username-Username">
+		<meta name="description" content="Password-Password">
+		<meta name="description" content="Button-Cancel">
+		<meta name="description" content="Submit-Button-Sign-Up">
+		<meta name="author" content="rison_perera">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<!--Header-->
+		<div class="header-sign-up">
+			<span>
+				<b>
+					Sign Up
+				</b>
+			<span>
+		</div>
+		<!--Sign up Form-->
+		<form class="form-content" action="/submit" method="post" id="ContentId">
+			<!--Username-->
+			<div>
+				<label for="username">
+					<b>
+						Username
+					</b>
+				</label>
+				<input type="username" placeholder="Please enter your Username" name="username" id="username" required>
+			</div>
+			<!--Password-->
+			<div>
+				<label for="password">
+					<b>
+						Password
+					</b>
+				</label>
+				<input type="password" placeholder="Please enter your Password" name="password" id="password" required>
+			</div>
+			<!--Function-->
+			<div class="retrieve">
+				<button type="cancel">
+					<!--<a href="#hello">-->
+						Cancel
+					<!--</a>-->
+				</button>
+				<button type="submit">
+					<!--<a href="#hi">-->
+						Sign Up
+					<!--</a>-->
+				</button>
+			</div>
+		</form>
+	</body>
+</html>
